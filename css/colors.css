@@ -1,0 +1,6 @@
+:root {
+  --bg-primary-color: #000;
+  --bg-secondary-color: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  --thruster-primary-color: #8257E5;
+  --thruster-secondary-color: tomato;
+}
