@@ -1,0 +1,86 @@
+.scene-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.rocket {
+  position: absolute;
+  z-index: 1;
+
+  pointer-events: none;
+
+  animation: animate 0.2s ease infinite;
+  transition: 0.1s;
+
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(-52px) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-48px) translateX(-50%);
+  }
+}
+
+.rocket::before {
+  content: '';
+
+  width: 60px;
+  height: 70px;
+  
+  position: absolute;
+  bottom: 48px;
+  left: 30%;
+  z-index: 1;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(var(--thruster-primary-color), transparent);
+  filter: blur(20px);
+
+}
+.rocket::after {
+  content: '';
+
+  width: 60px;
+  height: 70px;
+  
+  position: absolute;
+  bottom: 48px;
+  left: 30%;
+  z-index: 1;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(var(--thruster-primary-color), transparent);
+  filter: blur(20px);
+}
+
+.scene-container:active .rocket::before,
+.scene-container:active .rocket::after {
+  background: linear-gradient(--thruster-secondary-color, transparent);
+  filter: blur(40px);
+}
+
+.moon {
+  display: block;
+  align-self: flex-start;
+
+  z-index: 0;
+
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .moon {
+    width: 35%;
+  }
+}
