@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: var(--bg-secondary-color);
+  background-blend-mode: multiply;
+  padding: 6px 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media li {
+  display: block;
+}
+
+.social-media li + li {
+  margin-left: 16px;
+}
+
+.social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+  opacity: .5;
+}
