@@ -21,6 +21,10 @@
 
 }
 
+.rocket img {
+  width: 210px;
+}
+
 @keyframes animate {
   0%, 100% {
     transform: translateY(-52px) translateX(-50%);
@@ -37,8 +41,8 @@
   height: 70px;
   
   position: absolute;
-  bottom: 48px;
-  left: 30%;
+  bottom: 28px;
+  left: 26%;
   z-index: 1;
 
   transform: translateX(-50%);
@@ -54,8 +58,8 @@
   height: 70px;
   
   position: absolute;
-  bottom: 48px;
-  left: 30%;
+  bottom: 28px;
+  left: 26%;
   z-index: 1;
 
   transform: translateX(-50%);
@@ -81,6 +85,36 @@
 
 @media (max-width: 600px) {
   .moon {
-    width: 35%;
+    margin-top: 45px;
+    width: 240px;
+  }
+
+  .rocket img {
+    width: 100px;
+  }
+
+  .rocket::before {
+    width: 60px;
+    height: 35px;
+    
+    bottom: 18px;
+    left: 35%;
+
+    filter: blur(15px);
+  
+  }
+  .rocket::after {
+    width: 60px;
+    height: 35px;
+    
+    bottom: 18px;
+    left: 35%;
+  
+    filter: blur(15px);
+  }
+  
+  .scene-container:active .rocket::before,
+  .scene-container:active .rocket::after {
+    filter: blur(25px);
   }
 }

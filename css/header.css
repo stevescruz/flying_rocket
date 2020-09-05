@@ -23,7 +23,7 @@
   width: 60px;
 }
 
-.repo-link {
+.header > .header-link {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -31,7 +31,13 @@
   margin-right: 40px;
 }
 
-.repo-link:hover img,
-.repo-link:focus img {
+.header-link:hover img,
+.header-link:focus img {
   opacity: .5;
+}
+
+@media (max-width: 600px) {
+  .header {
+    z-index: 2;
+  }
 }
