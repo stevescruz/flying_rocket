@@ -10,23 +10,19 @@
 <p align="center">
   <a href ="#why">Why?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#what-can-i-learn?">What can I learn?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#what-can-i-learn">What can I learn?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 
   <img style="margin: 10px" alt="Desktop version" src="https://res.cloudinary.com/dmct8cfu9/image/upload/v1599279385/flying_rocket_desktop.gif" width="509"/>
 
   <img style="margin: 10px" alt="Mobile version" src="https://res.cloudinary.com/dmct8cfu9/image/upload/v1599279384/flying_rocket_mobile.gif" width="135" />
 
-  <p style="padding-left: 180px">
-    Desktop
-  </p>
-
-  <p style="padding-left: 200px">
-    Mobile
+  <p style="margin: 0 auto;">
+    Desktop and mobile versions respectively
   </p>
 </div>
 
@@ -55,7 +51,7 @@ This project was developed with the following technologies:
    
 4. Cool animation created by using a combination of ::before and ::after pseudo-elements, :active state and keyframes.
 
-Check out the [Front-end Mastery Repository](https://github.com/stevescruz/frontend_mastery) it contains references to learn many CSS and JavaScript tricks for front-end developers.
+Check out the [Front-end Mastery repository](https://github.com/stevescruz/frontend_mastery) it contains references to level up with CSS and JavaScript tricks for front-end developers.
 
 ## How to use
 
@@ -71,7 +67,7 @@ $ git clone https://github.com/stevescruz/flying_rocket.git
 $ cd flying_rocket
 
 # Run the app
-Open index.html with your web browser
+Run index.html with your web browser
 ```
 
 ## :memo: License
