@@ -40,4 +40,8 @@
   .header {
     z-index: 2;
   }
+
+  .logo {
+    width: 30px;
+  }
 }
